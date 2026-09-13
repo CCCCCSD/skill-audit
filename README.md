@@ -9,6 +9,8 @@ prompt on **every single request**.
 
 **Zero dependencies · zero network · zero telemetry · no API keys · no build step**
 
+![skill-audit terminal demo](docs/demo.png)
+
 ## Why
 
 Agent skills (the open `SKILL.md` format) are cheap to install and free to forget:
@@ -34,7 +36,7 @@ zombie skills (0 triggers): 39/40 — imagegen, openai-docs, plugin-creator, …
 
 SKILL            SOURCE  LAYER     SIZE   MODIFIED    TRIGGERS  LAST USED  PATH
 ---------------  ------  --------  -----  ----------  --------  ---------  ---------------------------------
-story            zcode   project   170.8K 2026-09-13        11  2026-09-13 ./.zcode/skills/story
+story            zcode   project   170.8K 2026-09-13        13  2026-09-13 ./.zcode/skills/story
 story-cover      zcode   project   25.2K  2026-09-13         0  -          ./.zcode/skills/story-cover
 …
 skill-creator    codex   system    63.2K  2026-07-26         0  -          ~/.codex/skills/.system/skill-creator
