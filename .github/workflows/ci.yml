@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  smoke:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: CLI help works
+        run: node bin/cli.js --help
+      - name: Version prints
+        run: node bin/cli.js --version
+      - name: Scan produces valid JSON
+        run: |
+          node bin/cli.js --dir . --no-usage --json > audit.json
+          node -e "const j=require('./audit.json'); if(!j.summary || typeof j.summary.total!=='number') process.exit(1); console.log('skills found:', j.summary.total)"
+      - name: Table renders (exit 0)
+        run: node bin/cli.js --dir . --no-usage

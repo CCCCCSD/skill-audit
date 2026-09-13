@@ -1,5 +1,7 @@
 # skill-audit
 
+[![CI](https://github.com/CCCCCSD/skill-audit/actions/workflows/ci.yml/badge.svg)](https://github.com/CCCCCSD/skill-audit/actions/workflows/ci.yml)
+
 > Your agents installed 40 skills. You use 3. Find out which — and what the other 37 are costing you.
 
 `skill-audit` is a local-first CLI that inventories every AI-agent skill installed on your
