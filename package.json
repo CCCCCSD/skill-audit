@@ -1,0 +1,27 @@
+{
+  "name": "skill-audit",
+  "version": "0.1.0",
+  "description": "Local-first inventory, de-duplication and usage analysis for AI agent skills (ZCode / Codex / Claude Code). Zero dependencies, zero network, zero telemetry.",
+  "main": "bin/cli.js",
+  "bin": {
+    "skill-audit": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "agent-skills",
+    "skills",
+    "claude-code",
+    "codex",
+    "zcode",
+    "audit",
+    "cli"
+  ],
+  "license": "MIT"
+}
