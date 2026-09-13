@@ -1,10 +1,26 @@
 {
-  "name": "skill-audit",
+  "name": "agent-skill-audit",
   "version": "0.1.0",
   "description": "Local-first inventory, de-duplication and usage analysis for AI agent skills (ZCode / Codex / Claude Code). Zero dependencies, zero network, zero telemetry.",
   "main": "bin/cli.js",
   "bin": {
-    "skill-audit": "bin/cli.js"
+    "agent-skill-audit": "bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "SKILL.md",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCCCCSD/skill-audit.git"
+  },
+  "homepage": "https://github.com/CCCCCSD/skill-audit#readme",
+  "bugs": {
+    "url": "https://github.com/CCCCCSD/skill-audit/issues"
   },
   "scripts": {
     "start": "node bin/cli.js"

@@ -62,13 +62,18 @@ identical content (hash): 3
 ## Usage
 
 ```bash
-git clone https://github.com/CCCCCSD/skill-audit && cd skill-audit
+# run without installing (npm package: agent-skill-audit)
+npx agent-skill-audit                      # scan cwd + user dirs + logs, full report
+npx agent-skill-audit --dir ~/my/project   # count project-level skills of a project
+npx agent-skill-audit --json               # machine-readable
+npx agent-skill-audit usage                # trigger counts only
+npx agent-skill-audit --no-usage           # inventory only, don't touch session logs
 
-node bin/cli.js                      # scan cwd + user dirs + logs, full report
-node bin/cli.js --dir ~/my/project   # count project-level skills of a specific project
-node bin/cli.js --json               # machine-readable
-node bin/cli.js usage                # trigger counts only
-node bin/cli.js --no-usage           # inventory only, don't touch session logs
+# or install globally
+npm i -g agent-skill-audit
+
+# or run from source
+git clone https://github.com/CCCCCSD/skill-audit && cd skill-audit && node bin/cli.js
 ```
 
 Exit code is `0` even when zombies are found (script-friendly); `2` on bad arguments.

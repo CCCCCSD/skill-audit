@@ -26,11 +26,15 @@
 ## 用法
 
 ```bash
-node bin/cli.js                      # 全量报告（盘点 + 重复 + 用量）
-node bin/cli.js --dir ~/my/project   # 指定项目目录
-node bin/cli.js --json               # JSON 输出
-node bin/cli.js usage                # 只看触发统计
-node bin/cli.js --no-usage           # 只盘点，不读日志
+npx agent-skill-audit                # 全量报告（盘点 + 重复 + 用量）
+npx agent-skill-audit --dir ~/my/project   # 指定项目目录
+npx agent-skill-audit --json         # JSON 输出
+npx agent-skill-audit usage          # 只看触发统计
+npx agent-skill-audit --no-usage     # 只盘点，不读日志
+
+# 或全局安装 / 从源码运行
+npm i -g agent-skill-audit
+git clone https://github.com/CCCCCSD/skill-audit && node bin/cli.js
 ```
 
 ## 隐私
