@@ -58,7 +58,7 @@ identical content (hash): 3
 ## Usage
 
 ```bash
-git clone https://github.com/<you>/skill-audit && cd skill-audit
+git clone https://github.com/CCCCCSD/skill-audit && cd skill-audit
 
 node bin/cli.js                      # scan cwd + user dirs + logs, full report
 node bin/cli.js --dir ~/my/project   # count project-level skills of a specific project
